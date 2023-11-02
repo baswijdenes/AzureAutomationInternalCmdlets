@@ -8,39 +8,49 @@ schema: 2.0.0
 # Set-SoftwareUpdateConfigurationMachineRun
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+
+Creates or updates an Azure Automation software update configuration machine run.
 
 ## SYNTAX
 
 ### Create
-```
+
+```powershell
 Set-SoftwareUpdateConfigurationMachineRun -Id <Guid> -SoftwareUpdateConfigurationRunId <Guid> -AgentId <Guid>
  -SoftwareUpdateConfigurationName <String> -TargetComputer <String> -ConfiguredDuration <TimeSpan>
  -OperatingSystem <String> [<CommonParameters>]
 ```
 
 ### Update
-```
+
+```powershell
 Set-SoftwareUpdateConfigurationMachineRun -Id <Guid> [-RebootRequired <Boolean>] -Status <String>
  [-EndTime <DateTimeOffset>] [-OperationResult <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+
+The `Set-SoftwareUpdateConfigurationMachineRun` cmdlet is used to create or update an Azure Automation software update configuration machine run. This cmdlet allows you to configure and manage the properties of machine runs associated with software update configurations.
 
 ## EXAMPLES
 
 ### Example 1
+
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Set-SoftwareUpdateConfigurationMachineRun -Id 12345678-90ab-cdef-1234-567890abcdef -SoftwareUpdateConfigurationRunId 12345678-90ab-cdef-1234-567890abcdef -AgentId 12345678-90ab-cdef-1234-567890abcdef -SoftwareUpdateConfigurationName "MySoftwareUpdateConfig" -TargetComputer "Server01" -ConfiguredDuration 1:00:00 -OperatingSystem "Windows"
 ```
 
-{{ Add example description here }}
+### Example 2
+
+```powershell
+PS C:\> Set-SoftwareUpdateConfigurationMachineRun -Id 12345678-90ab-cdef-1234-567890abcdef -Status "Succeeded"
+```
 
 ## PARAMETERS
 
 ### -AgentId
-{{ Fill AgentId Description }}
+
+Specifies the unique identifier (GUID) of the machine agent.
 
 ```yaml
 Type: Guid
@@ -55,7 +65,8 @@ Accept wildcard characters: False
 ```
 
 ### -ConfiguredDuration
-{{ Fill ConfiguredDuration Description }}
+
+Specifies the configured duration for the machine run.
 
 ```yaml
 Type: TimeSpan
@@ -70,7 +81,8 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-{{ Fill EndTime Description }}
+
+Specifies the end time for the machine run.
 
 ```yaml
 Type: DateTimeOffset
@@ -85,7 +97,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-{{ Fill Id Description }}
+
+Specifies the unique identifier (GUID) of the machine run.
 
 ```yaml
 Type: Guid
@@ -100,7 +113,8 @@ Accept wildcard characters: False
 ```
 
 ### -OperatingSystem
-{{ Fill OperatingSystem Description }}
+
+Specifies the operating system for the machine run.
 
 ```yaml
 Type: String
@@ -116,7 +130,8 @@ Accept wildcard characters: False
 ```
 
 ### -OperationResult
-{{ Fill OperationResult Description }}
+
+Specifies the operation result for the machine run.
 
 ```yaml
 Type: String
@@ -131,7 +146,8 @@ Accept wildcard characters: False
 ```
 
 ### -RebootRequired
-{{ Fill RebootRequired Description }}
+
+Specifies whether a reboot is required for the machine run.
 
 ```yaml
 Type: Boolean
@@ -146,7 +162,8 @@ Accept wildcard characters: False
 ```
 
 ### -SoftwareUpdateConfigurationName
-{{ Fill SoftwareUpdateConfigurationName Description }}
+
+Specifies the name of the Azure Automation software update configuration.
 
 ```yaml
 Type: String
@@ -161,7 +178,8 @@ Accept wildcard characters: False
 ```
 
 ### -SoftwareUpdateConfigurationRunId
-{{ Fill SoftwareUpdateConfigurationRunId Description }}
+
+Specifies the unique identifier (GUID) of the software update configuration run.
 
 ```yaml
 Type: Guid
@@ -176,7 +194,8 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-{{ Fill Status Description }}
+
+Specifies the status of the machine run.
 
 ```yaml
 Type: String
@@ -192,7 +211,8 @@ Accept wildcard characters: False
 ```
 
 ### -TargetComputer
-{{ Fill TargetComputer Description }}
+
+Specifies the target computer for the machine run.
 
 ```yaml
 Type: String
@@ -207,23 +227,29 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
+
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### System.Guid
+System.Guid
 
-### System.String
+System.String
 
-### System.TimeSpan
+System.TimeSpan
 
-### System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
 
-### System.Nullable`1[[System.DateTimeOffset, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+System.Nullable`1[[System.DateTimeOffset, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
-### System.Object
+System.Object
+
 ## NOTES
 
+Generated by Bas Wijdenes
+
 ## RELATED LINKS
+
+[Bas Wijdenes](https://www.baswijdenes.com)

@@ -8,56 +8,63 @@ schema: 2.0.0
 # Set-SoftwareUpdateConfigurationRun
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+
+Sets the configuration for a software update run in Azure Automation.
 
 ## SYNTAX
 
 ### Create
-```
+
+```powershell
 Set-SoftwareUpdateConfigurationRun -Id <Guid> -SoftwareUpdateConfigurationName <String>
  -ConfiguredDuration <TimeSpan> -OperatingSystem <String> [-Status <String>] -ComputerCount <Int32>
  [-PreScriptSource <String>] [-PostScriptSource <String>] [<CommonParameters>]
 ```
 
 ### Update
-```
+
+```powershell
 Set-SoftwareUpdateConfigurationRun -Id <Guid> -Status <String> [-OperationResult <String>] [<CommonParameters>]
 ```
 
 ### UpdatePre
-```
+
+```powershell
 Set-SoftwareUpdateConfigurationRun -Id <Guid> -PreScriptJobId <Guid> -PreScriptStatus <String>
  [-OperationResult <String>] [<CommonParameters>]
 ```
 
 ### UpdatePost
-```
+
+```powershell
 Set-SoftwareUpdateConfigurationRun -Id <Guid> -PostScriptJobId <Guid> -PostScriptStatus <String>
  [-OperationResult <String>] [<CommonParameters>]
 ```
 
 ### SetTerminalState
-```
+
+```powershell
 Set-SoftwareUpdateConfigurationRun -Id <Guid> [-SetTerminalState] [-OperationResult <String>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+
+The `Set-SoftwareUpdateConfigurationRun` cmdlet is used to configure and update a software update run in Azure Automation. It allows you to manage various aspects of the run, including its duration, operating system, scripts, and status.
 
 ## EXAMPLES
 
 ### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
 
-{{ Add example description here }}
+```powershell
+PS C:\> Set-SoftwareUpdateConfigurationRun -Id eeb400b2-9cd3-4370-9a57-45c5b53175df -SoftwareUpdateConfigurationName "UpdateConfig1" -ConfiguredDuration "01:30:00" -OperatingSystem "Windows" -Status "InProgress" -ComputerCount 10
+```
 
 ## PARAMETERS
 
 ### -ComputerCount
-{{ Fill ComputerCount Description }}
+
+Specifies the number of computers involved in the software update run.
 
 ```yaml
 Type: Int32
@@ -72,7 +79,8 @@ Accept wildcard characters: False
 ```
 
 ### -ConfiguredDuration
-{{ Fill ConfiguredDuration Description }}
+
+Specifies the duration of the software update run.
 
 ```yaml
 Type: TimeSpan
@@ -87,7 +95,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-{{ Fill Id Description }}
+
+Specifies the unique ID of the software update run.
 
 ```yaml
 Type: Guid
@@ -102,7 +111,8 @@ Accept wildcard characters: False
 ```
 
 ### -OperatingSystem
-{{ Fill OperatingSystem Description }}
+
+Specifies the target operating system for the software update run.
 
 ```yaml
 Type: String
@@ -118,7 +128,8 @@ Accept wildcard characters: False
 ```
 
 ### -OperationResult
-{{ Fill OperationResult Description }}
+
+Specifies the result of the software update operation.
 
 ```yaml
 Type: String
@@ -133,7 +144,8 @@ Accept wildcard characters: False
 ```
 
 ### -PostScriptJobId
-{{ Fill PostScriptJobId Description }}
+
+Specifies the unique ID of the post-update script job.
 
 ```yaml
 Type: Guid
@@ -148,7 +160,8 @@ Accept wildcard characters: False
 ```
 
 ### -PostScriptSource
-{{ Fill PostScriptSource Description }}
+
+Specifies the source of the post-update script.
 
 ```yaml
 Type: String
@@ -163,7 +176,8 @@ Accept wildcard characters: False
 ```
 
 ### -PostScriptStatus
-{{ Fill PostScriptStatus Description }}
+
+Specifies the status of the post-update script.
 
 ```yaml
 Type: String
@@ -178,7 +192,8 @@ Accept wildcard characters: False
 ```
 
 ### -PreScriptJobId
-{{ Fill PreScriptJobId Description }}
+
+Specifies the unique ID of the pre-update script job.
 
 ```yaml
 Type: Guid
@@ -193,7 +208,8 @@ Accept wildcard characters: False
 ```
 
 ### -PreScriptSource
-{{ Fill PreScriptSource Description }}
+
+Specifies the source of the pre-update script.
 
 ```yaml
 Type: String
@@ -208,7 +224,8 @@ Accept wildcard characters: False
 ```
 
 ### -PreScriptStatus
-{{ Fill PreScriptStatus Description }}
+
+Specifies the status of the pre-update script.
 
 ```yaml
 Type: String
@@ -223,7 +240,8 @@ Accept wildcard characters: False
 ```
 
 ### -SetTerminalState
-{{ Fill SetTerminalState Description }}
+
+Indicates whether to set the terminal state of the software update run.
 
 ```yaml
 Type: SwitchParameter
@@ -238,7 +256,8 @@ Accept wildcard characters: False
 ```
 
 ### -SoftwareUpdateConfigurationName
-{{ Fill SoftwareUpdateConfigurationName Description }}
+
+Specifies the name of the software update configuration.
 
 ```yaml
 Type: String
@@ -253,7 +272,8 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-{{ Fill Status Description }}
+
+Specifies the status of the software update run.
 
 ```yaml
 Type: String
@@ -282,23 +302,29 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
+
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### System.Guid
+System.Guid
 
-### System.String
+System.String
 
-### System.TimeSpan
+System.TimeSpan
 
-### System.Management.Automation.SwitchParameter
+System.Management.Automation.SwitchParameter
 
-### System.Int32
+System.Int32
 
 ## OUTPUTS
 
-### System.Object
+System.Object
+
 ## NOTES
 
+Generated by Bas Wijdenes
+
 ## RELATED LINKS
+
+[Bas Wijdenes](https://www.baswijdenes.com)
