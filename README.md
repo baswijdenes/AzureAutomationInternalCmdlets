@@ -7,26 +7,26 @@ The documents are generated with [PlatyPS](https://github.com/PowerShell/platyPS
 
 ## Automation
 
-- [Get-AutomationCertificate](.\docs\Automation\Get-AutomationCertificate.md)
-- [Get-AutomationConnection](.\docs\Automation\Get-AutomationConnection.md)
-- [Get-AutomationPSCredential](.\docs\Automation\Get-AutomationPSCredential.md)
-- [Get-AutomationVariable](.\docs\Automation\Get-AutomationVariable.md)
-- [Get-SoftwareUpdateConfigurationMachines](.\docs\Automation\Get-SoftwareUpdateConfigurationMachines.md)
-- [Initialize-AutomationSoftwareUpdateConfiguration](.\docs\Automation\Initialize-AutomationSoftwareUpdateConfiguration.md)
-- [Invoke-AutomationWatcherAction](.\docs\Automation\Invoke-AutomationWatcherAction.md)
-- [Set-AutomationVariable](.\docs\Automation\Set-AutomationVariable.md)
+- [Get-AutomationCertificate](\docs\Automation\Get-AutomationCertificate.md)
+- [Get-AutomationConnection](\docs\Automation\Get-AutomationConnection.md)
+- [Get-AutomationPSCredential](\docs\Automation\Get-AutomationPSCredential.md)
+- [Get-AutomationVariable](\docs\Automation\Get-AutomationVariable.md)
+- [Get-SoftwareUpdateConfigurationMachines](\docs\Automation\Get-SoftwareUpdateConfigurationMachines.md)
+- [Initialize-AutomationSoftwareUpdateConfiguration](\docs\Automation\Initialize-AutomationSoftwareUpdateConfiguration.md)
+- [Invoke-AutomationWatcherAction](\docs\Automation\Invoke-AutomationWatcherAction.md)
+- [Set-AutomationVariable](\docs\Automation\Set-AutomationVariable.md)
 - [Set-SoftwareUpdateConfigurationMachineRun](.\docs\Automation\Set-SoftwareUpdateConfigurationMachineRun.md)
-- [Set-SoftwareUpdateConfigurationRun](.\docs\Automation\Set-SoftwareUpdateConfigurationRun.md)
-- [Start-AutomationRunbook](.\docs\Automation\Start-AutomationRunbook.md)
-- [Wait-AutomationJob](.\docs\Automation\Wait-AutomationJob.md)
+- [Set-SoftwareUpdateConfigurationRun](\docs\Automation\Set-SoftwareUpdateConfigurationRun.md)
+- [Start-AutomationRunbook](\docs\Automation\Start-AutomationRunbook.md)
+- [Wait-AutomationJob](\docs\Automation\Wait-AutomationJob.md)
 
 ## RunbookFlow
 
-- [Invoke-RunbookFlow.md](.\docs\RunbookFlow\Invoke-RunbookFlow.md)
-- [New-RunbookFlowJunction.md](.\docs\RunbookFlow\New-RunbookFlowJunction.md)
-- [New-RunbookFlowLink.md](.\docs\RunbookFlow\New-RunbookFlowLink.md)
-- [New-RunbookFlowScript.md](.\docs\RunbookFlow\New-RunbookFlowScript.md)
-- [Set-RunbookFlowActivityInput.md](.\docs\RunbookFlow\Set-RunbookFlowActivityInput.md)
+- [Invoke-RunbookFlow.md](\docs\RunbookFlow\Invoke-RunbookFlow.md)
+- [New-RunbookFlowJunction.md](\docs\RunbookFlow\New-RunbookFlowJunction.md)
+- [New-RunbookFlowLink.md](\docs\RunbookFlow\New-RunbookFlowLink.md)
+- [New-RunbookFlowScript.md](\docs\RunbookFlow\New-RunbookFlowScript.md)
+- [Set-RunbookFlowActivityInput.md](\docs\RunbookFlow\Set-RunbookFlowActivityInput.md)
 
 ## What are Azure Automation internal cmdlets?
 
